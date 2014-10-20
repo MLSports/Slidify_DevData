@@ -1,0 +1,59 @@
+---
+title       : Univariate regression analysis as a shiny app
+subtitle    : Based on the mtcars dataset
+author      : MLSports
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Problem
+
+- Doing Univariate Linear Regression Analysis in R is "easy" (not really, but running the commands is quite easy!)
+- Provide opportunity to play around for colleagues without experience in R
+- Using a shiny app that is available to everyone
+- Use mtcars data set
+- Want to predict mpg (miles per gallon) by different continuous features
+
+--- .class #id 
+
+## Dataset
+```{r loadining data set, echo=FALSE}
+mpgData <- mtcars
+```
+
+
+- mtcars
+- Data from the 1974 Motor Trend US magazine
+- Comprises fuel consumption and 10 aspects of automobile design and performance 
+- 32 automobiles (1973-74 models)
+- `r colnames(mtcars)[1]` - Miles per gallon
+- `r colnames(mtcars)[3]` - Displacement (cu. in.)
+- `r colnames(mtcars)[4]` - Horse Power
+- `r colnames(mtcars)[6]` - Weight
+- `r colnames(mtcars)[7]` - 1/4 Mile Time
+
+
+
+--- 
+## Shiny app example
+- https://mlsports.shinyapps.io/C_DevData/
+- Compare Predictions for `r colnames(mtcars)[c(3,4,6,7)]` separately to predict `r colnames(mtcars)[1]`
+- Investigate regression line fit to the data and a summary of the fit to compare models
+```{r example, echo=FALSE, fig.height=5, fig.width=10}
+fit<- lm(mpg~disp, data=mpgData)
+plot(mpg~disp, 
+            data = mpgData, pch=21, bg="lightblue")
+abline(fit, col="red", lw=3)
+```
+
+---
+## Outlook 
+- Include non-continous features
+- Include option for Multivariate Regression
+- Extend application to arbitrary datasets
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Univariate regression analysis as a shiny app</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Univariate regression analysis as a shiny app">
+  <meta name="author" content="MLSports">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Univariate regression analysis as a shiny app</h1>
+    <h2>Based on the mtcars dataset</h2>
+    <p>MLSports<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Problem</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Doing Univariate Linear Regression Analysis in R is &quot;easy&quot; (not really, but running the commands is quite easy!)</li>
+<li>Provide opportunity to play around for colleagues without experience in R</li>
+<li>Using a shiny app that is available to everyone</li>
+<li>Use mtcars data set</li>
+<li>Want to predict mpg (miles per gallon) by different continuous features</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>mtcars</li>
+<li>Data from the 1974 Motor Trend US magazine</li>
+<li>Comprises fuel consumption and 10 aspects of automobile design and performance </li>
+<li>32 automobiles (1973-74 models)</li>
+<li>mpg - Miles per gallon</li>
+<li>disp - Displacement (cu. in.)</li>
+<li>hp - Horse Power</li>
+<li>wt - Weight</li>
+<li>qsec - 1/4 Mile Time</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Shiny app example</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><a href="https://mlsports.shinyapps.io/C_DevData/">https://mlsports.shinyapps.io/C_DevData/</a></li>
+<li>Compare Predictions for disp, hp, wt, qsec separately to predict mpg</li>
+<li>Investigate regression line fit to the data and a summary of the fit to compare models
+<img src="assets/fig/example.png" alt="plot of chunk example"> </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Outlook</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Include non-continous features</li>
+<li>Include option for Multivariate Regression</li>
+<li>Extend application to arbitrary datasets</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Problem'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Dataset'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Shiny app example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Outlook'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
